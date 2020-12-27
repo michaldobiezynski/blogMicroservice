@@ -26,8 +26,8 @@ export default function PostList() {
         <div className="card-body">
           <h3>{post.title}</h3>
         </div>
+        <CommentList postId={post.id} />
         <CommentCreate postId={post.id} />
-        <CommentList />
       </div>
     );
   });
