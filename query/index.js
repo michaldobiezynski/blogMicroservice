@@ -30,8 +30,6 @@ app.post("/events", async (req, res) => {
     post.comments.push({ id, content });
   }
 
-  console.log(posts);
-
   res.send({});
 });
 
