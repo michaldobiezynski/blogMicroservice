@@ -1,6 +1,9 @@
 #Use an existing docker image as a base
 FROM node:alpine
 
+# Add the following line 
+ENV CI=true
+
 WORKDIR /app
 
 #Download and install a dependency
